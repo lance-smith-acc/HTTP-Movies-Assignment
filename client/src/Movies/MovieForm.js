@@ -15,22 +15,6 @@ const MovieForm = props => {
     props.updateMovie(movie);
   }, props.movie );
 
-  // const changeHandler = ev => {
-  //   ev.persist();
-  //   let value = ev.target.value;
-
-  //   if (ev.target.name === 'stars'){
-  //       const originalStars = [ev.target.value.split(',')];
-  //       setMovie({
-  //           ...movie, stars:originalStars
-  //       })
-  //   }
-
-  //    setMovie({
-  //     ...movie,
-  //     [ev.target.name]: value
-  //   });
-  // };
 
   const changeHandler = e => {
     if (e.target.name !== 'stars'){
@@ -45,8 +29,6 @@ const MovieForm = props => {
         })
     }
   };
-
-
 
   const handleSubmit = e => {
     e.preventDefault();
