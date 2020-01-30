@@ -8,12 +8,9 @@ body {
 .movie-card {
   background-color: #fff;
   border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
   cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
+  width:80%;
 }
 
 .movie-director {
@@ -49,19 +46,26 @@ body {
   padding: 5px;
 }
 .save-wrapper {
+  background-color: white;
+  display:flex;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
   position: relative;
   width: 75%;
   margin: 1rem auto;
 }
-.save-button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
+.button-container {
+  display: flex;
+  padding:5% 0;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.button {
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
 }
-.save-button:hover {
+.button:hover {
   background-color: green;
   color: white;
 }
@@ -74,4 +78,26 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+.form-wrapper {
+  background-color: white;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  position: relative;
+  width: 75%;
+  margin: 1rem auto;
+}
+.update-form, form{
+  display: flex;
+  margin: 0 auto;
+  width:80%;
+  flex-direction: column;
+}
+.update-form, input, button {
+  width:75%;
+  margin: 0 auto;
+  margin-top:1%;
+  margin-bottom: 1%;
 }
